@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    color: #fff;
+    background: #000046;
+    background: -webkit-linear-gradient(130deg, #1CB5E0, #000046);
+    background: linear-gradient(130deg, #1CB5E0, #000046);
+}
+
+#openMaintenanceModal {
+    margin: 150px auto auto 85px;
+    padding: 20px;
+    font-size: 22px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(160deg, #6190e8, #a7bfe8);
+    color: #fefefe;
+}
+
+/* The Modal (Background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    padding: 0;
+    border: 3px solid #888;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0;}
+    to {top: 0; opacity: 1;}
+}
+
+/* Close */
+.close {
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 350px;
+    height: 50px;
+    border: none;
+    margin: 25px auto; /* Centered horizontally */
+    display: block; /* Centered horizontally */
+    background: linear-gradient(160deg, #6190e8, #a7bfe8);
+    color: #fefefe;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 10px 25px;
+    color: #fefefe;
+    background: linear-gradient(153deg, #3494e6, #ec6ead);
+    display: flex;
+    justify-content: center;
+}
+
+.modal-body {
+    padding: 7px 16px;
+    color: #333;
+    font-size: 18px;
+}
+
+.additional-details {
+    padding: 2px;
+    color: #333;
+    font-size: 18px;
+    padding: 7px 16px;
+}
+
+.additional-details ul li {
+    padding: 2px;
+    list-style-type: none;
+}

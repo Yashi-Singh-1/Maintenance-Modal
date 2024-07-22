@@ -23,7 +23,7 @@
 
 <ul>
     <li>Creating and Manipulating Elements</li>
-    <li>CSSS for Modals</li>
+    <li>CSS for Modals</li>
     <li>Event Handling</li>
 </ul>
 
